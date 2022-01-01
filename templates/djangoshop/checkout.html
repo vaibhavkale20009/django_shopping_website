@@ -1,0 +1,27 @@
+{% extends 'djangoshop/base.html' %}
+
+{% block body_block %}
+
+
+
+
+    <h2>Checkout: {{total_prices}}</h2>
+    <div class="grid-container" aling="center" style="border :2px black solid ">
+       
+        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+    {% for c in allobj %}
+    <h3> Product name: {{c.name}}</h3>
+    <img src="{{c.img.url}}" style="width: 100%; float: left; margin-right: 10px;" />
+    <h3> Price: {{c.price}}</h3>
+    <br>
+    <a  href="/delete/{{c.id}}" class="btn btn-primary"> Remove</a>
+    <a  href="/checkout/{{c.id}}" class="btn btn-primary"> increase quantity</a>
+    
+    <br>
+
+    {% endfor %} 
+    </div>
+    </div>
+    <a href="/payments/" class="btn btn-primary">Checkout</a>
+    
+{% endblock %}

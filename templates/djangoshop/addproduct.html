@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+</head>
+
+
+<body>
+
+    <h1>
+
+        ADD product
+    </h1>
+    <form class="form-horizontal form_middle" enctype='multipart/form-data' method="POST">
+       
+    {{form.as_p}}
+    {% csrf_token %}
+
+    <button type="submit" value="add_product">Submit</button>
+    </form>
+</body>
+
+</html>

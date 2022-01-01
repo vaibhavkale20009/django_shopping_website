@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Shopping website</title>
+    <link rel="stylesheet"  href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+
+
+
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pc-display" viewBox="0 0 16 16">
+                <path d="M8 1a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1V1Zm1 13.5a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0Zm2 0a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0ZM9.5 1a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5ZM9 3.5a.5.5 0 0 0 .5.5h5a.5.5 0 0 0 0-1h-5a.5.5 0 0 0-.5.5ZM1.5 2A1.5 1.5 0 0 0 0 3.5v7A1.5 1.5 0 0 0 1.5 12H6v2h-.5a.5.5 0 0 0 0 1H7v-4H1.5a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5H7V2H1.5Z"/>
+              </svg>
+            <a class="navbar-brand" href="/"> OneStop </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Products</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Our Services
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Services</a>
+                    <a class="dropdown-item" href="#">Contact Us</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">About Us</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Categories</a>
+                </li>
+              </ul>
+              <div class=" nav nav-right">
+
+                  <li class="nav-item">
+                  <a class="nav-link" href="/checkout1/">Checkout</a>
+                  </li>
+                  <li class="nav-item">
+                  <a class="nav-link" href="/signup/">Signup</a>
+                  </li>
+                  <li class="nav-item">
+                  <a class="nav-link" href="/accounts/login">Login</a>
+                  </li>
+
+              </div>
+            </div>
+          </nav>
+        <div class="jumbotron">
+            <h1 class="display-4">OneStop.com</h1>
+            <p class="lead">We offer a wide variety of Products and also provide services like PC builds,PC build compatibility checks,PC build kits and PC/laptop repairs</p>
+            <hr class="my-4">
+            <p>Get in touch with us to get world class shopping experience and repairs</p>
+            <p class="lead">
+              <a class="btn btn-primary btn-lg" href="signup.html" role="button">Contact Us</a>
+            </p>
+        </div>
+
+        {% block body_block%}
+
+        {% endblock %}
+
+          
+            <!-- Footer -->
+
+<div class="container" aling="center">
+<footer class="page-footer font-small blue pt-4">
+
+  <!-- Footer Links -->
+  <div class="container-fluid text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-6 mt-md-0 mt-3">
+
+        <!-- Content -->
+        <h5 class="text-uppercase"> About Us</h5>
+        <tr>
+          <td>
+            Contact Us
+          </td>
+          <td>
+            phone 
+          </td>
+          <td>
+            <a href="abc@gmail.com">Email Us</a>
+
+          </td>
+        </tr>
+        <br>
+        <tr>
+
+          Terms and Conditions
+        </tr>
+        <br>
+        <tr>
+          Legal
+        </tr>
+        <br>
+        <tr>
+          Refund Policy
+        </tr>
+        <br>
+        <tr>
+          Registered offices
+        </tr>
+          <br>
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none pb-3">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <!-- Links -->
+        <h5 class="text-uppercase">Links</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Link 1</a>
+          </li>
+          <li>
+            <a href="#!">Link 2</a>
+          </li>
+          <li>
+            <a href="#!">Link 3</a>
+          </li>
+          <li>
+            <a href="#!">Link 4</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <!-- Links -->
+        <h5 class="text-uppercase">Links</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Link 1</a>
+          </li>
+          <li>
+            <a href="#!">Link 2</a>
+          </li>
+          <li>
+            <a href="#!">Link 3</a>
+          </li>
+          <li>
+            <a href="#!">Link 4</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2021 Copyright:
+    <a href="https://mdbootstrap.com/"> PcParts.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
+
+
+
+          
+</div>
+</div>
+</body>
+</html>
